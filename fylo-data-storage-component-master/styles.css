@@ -1,0 +1,148 @@
+body{
+	background-color: hsl(229, 57%, 11%);
+	color: hsl(229, 7%, 55%);
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+}
+button{
+	background-color: hsl(229, 57%, 11%);
+	border-style: none;
+	border-radius: 7px;
+	margin-right: 5%;
+	padding: 3.5%;
+	height: 50px;
+	width: 50px;
+}
+#Fylo, #icons{
+	display: flex;
+	align-content: flex-start;
+}
+
+.logo, .content{
+	margin-top: 18%;
+	background-color: hsl(228, 56%, 26%);
+	border-radius: 10px;
+}
+
+.logo{
+	margin-left: 12%;
+	padding: 3% 2% 0;
+	border-top-right-radius:100px;
+}
+.content{
+	padding: 2% 2% 2%;
+	margin-left: 5%;
+	margin-top: 25%;
+}
+.progress{
+ background-color: hsl(229, 57%, 11%);
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ margin: 5% 0 2%;
+}
+.progress-bar{
+	background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+}
+.hglight, .limit1, .limit2{
+	color: hsl(243, 100%, 93%);
+}
+.bg-img{
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+
+.attribution{
+	margin-top: 15%;
+	font-size: 11px; 
+	text-align: center;
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+.fylo{
+	padding-bottom: 20%;
+}
+.limit1{
+	text-align: left;
+}
+.limit2{
+	text-align: right;
+}
+.dot{
+	background: white;
+	position: relative;
+	right: 14px;
+	top: 1.49px;
+	width: 2.2%;
+	height: 75%;
+
+}
+.badge{
+	position: absolute;
+	top: -23%;
+	right: 5%;
+	color: black;
+	background-color: white;
+	padding: 2%;
+	font-weight: 700;
+	font-size: 35px;
+}
+.gbleft{
+	color: hsl(229, 7%, 55%);
+	font-size: 14px;
+	vertical-align: middle;
+
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 1px solid transparent;
+	border-top: 35px solid white;
+	position: absolute;
+	right: 5.1%;
+	top: 12%;
+
+	
+}
+@media  (max-width:576px)  {
+	body{
+		background-image: url("images/bg-mobile.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+	}
+	.bg-img{
+		display: none;
+	}
+	.logo, .content{
+		margin: 10% 10%;
+		padding: 5% 3% 3%;
+		text-align: center;
+	}
+	.logo{
+		margin-top: 30%;
+		padding-left: 10%;
+		margin-bottom: 0;
+	}
+	.dot{
+		width: 4.2%;
+	}
+	.badge{
+		top: 80%; 
+		right: 30%;
+		font-size: 40px;
+	}
+	.triangle-down{
+		display: none;
+	}
+}
